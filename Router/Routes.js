@@ -6,7 +6,7 @@ const authorization = require('../Middleware/Authorization');
 const Cartcontroller= require('../Controller/CartController');
 const Ordercontroller = require('../Controller/OrderController');
 
-router.get('/',authorization,ProductController.getProducts);
+router.get('/',ProductController.getProducts);
 router.post('/addproducts',ProductController.postProducts);
 router.put('/updateproducts',ProductController.updateProduct);
 router.delete('/deleteproduct',ProductController.deleteproduct);
